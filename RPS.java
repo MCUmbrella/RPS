@@ -25,7 +25,7 @@ public class RPS
 				if(p==2) {System.out.println("You have chosen scissors, please wait for the computer to choose...");}
 				if(p==3) {System.out.println("You have chosen the paper, please wait for the computer to choose...");}
 				
-				int c=r.nextInt(2);
+				int c=r.nextInt(3);
 				if(c==0) {System.out.println("Computer chose the rock."+c);}
 				if(c==1) {System.out.println("Computer chose scissors."+c);}
 				if(c==2) {System.out.println("Computer chose the paper."+c);}
@@ -37,7 +37,6 @@ public class RPS
 				if(p==1&&c==1) {System.out.println(name+" wins.");pw++;}
 				if(p==1&&c==2) {System.out.println("Computer wins.");cw++;}
 				if(p==2&&c==2) {System.out.println(name+" wins.");pw++;}
-				if(p==2&&c==1) {System.out.println("Computer wins.");cw++;}
 				if(p==3&&c==0) {System.out.println(name+" wins.");pw++;}
 				if(p==3&&c==1) {System.out.println("Computer wins.");cw++;}
 				
