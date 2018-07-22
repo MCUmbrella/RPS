@@ -1,5 +1,4 @@
 package rps;
-//import java.util.*;
 import java.util.Scanner;
 import java.util.Random;
 public class RPS 
@@ -7,11 +6,11 @@ public class RPS
 	
 	public static void main(String[] args) 
 	{
-		System.out.println("(C) 2018 Umbrella Studio. Rock-Paper-Scissors Simulator");
+		System.out.println("(C) 2018 Umbrella Studio. Rock-Paper-Scissors Simulator V1.2");
 		Scanner in=new Scanner(System.in);
 		Random r=new Random();
-		int pw=0;
-		int cw=0;
+		long pw=0;
+		long cw=0;
 		System.out.print("Enter your name:___________\b\b\b\b\b\b\b\b\b\b");
 		String name=in.nextLine();
 		if(name.equals("")){System.out.println("[!] No name detected. Exiting...");System.exit(-1);}
@@ -20,7 +19,7 @@ public class RPS
 		{
 			System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
 			System.out.println("Please input rock:1, scissors:2, paper:3,");
-			System.out.print("             Exit & Statistics:4. [_]\b\b");
+			System.out.print("["+pw+":"+cw+"]"+"      Exit & Statistics:4. [_]\b\b");
 			int p=in.nextInt();
 			if(p==4) {System.out.println(name+" won "+pw+" times.");System.out.println("Computer won "+cw+" times.");System.out.println("-Exiting...");System.exit(0);}
 			if(p==1||p==2||p==3) 
