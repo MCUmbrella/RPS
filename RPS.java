@@ -66,6 +66,7 @@ public class RPS
 				}
 			}else if(a==2) 
 			{
+				System.out.println("=-=-=-Statistics=-=-=-");
 				System.out.println(name+" won "+pw+" times.");
 				System.out.println("Computer won "+cw+" times.");
 				System.out.println("Draw "+d+" times.");
