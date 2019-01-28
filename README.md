@@ -1,3 +1,3 @@
 # RPS(rock-paper-scissors)
 A "rock-paper-scissors" game simulator.
-Use "java -jar RPS*.jar" to play the game.
+Type "java -jar RPS*.jar" or "RPS.run" in console to play the game.
